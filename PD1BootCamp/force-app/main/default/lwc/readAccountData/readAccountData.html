@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Account">
+        <p>Account Data:</p>
+        <template if:true={AccountList.data}>
+            <template for:each={AccountList.data} for:item="acc">
+                <p key={acc.Id}> Account Name: {acc.Name} and the Phone Number is: {acc.Phone} </p>
+            </template>
+        </template>
+    </lightning-card>
+</template>

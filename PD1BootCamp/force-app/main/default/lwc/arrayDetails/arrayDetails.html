@@ -1,0 +1,7 @@
+<template>
+    <p class="para">
+        <template for:each={saasGuruStudents} for:item="stu">
+            <p key={stu.Email}> {stu.Name} and the title of student is: {stu.Title}</p>
+        </template>  
+    </p>
+</template>

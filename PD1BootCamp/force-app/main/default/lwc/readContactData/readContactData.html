@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Contacts">
+        <p>Contact Data: </p>
+        <template if:true={contactList.data}>
+            <template for:each={contactList.data} for:item="con">
+                <p key ={con.Id}> Contact Name: {con.LastName} and the Email is: {con.Email}</p>
+            </template>
+        </template>
+    </lightning-card>
+</template>

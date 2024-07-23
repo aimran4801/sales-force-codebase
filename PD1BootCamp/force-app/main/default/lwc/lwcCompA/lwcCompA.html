@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Parent Component">
+        <p> This is a Parent Component</p>
+        <lightning-input type="text" label="Enter data to share with child:" value={message} onchange={handleChange}></lightning-input>
+        <c-lwc-comp-b greeting={message}></c-lwc-comp-b>
+    </lightning-card>
+</template>

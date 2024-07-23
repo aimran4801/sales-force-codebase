@@ -1,0 +1,13 @@
+<template>
+    <p class="para">Hello I am A Imran</p>
+    <p class="para1">Welcome to the New Project Assist by Himanshu</p>
+    <p>
+        {message}
+        <br>
+        {count}
+    </p>
+    <lightning-input type="text" name="input1" label="Enter Name: " value={getName} onchange={handleChange}></lightning-input>
+    <lightning-input type="date" name="input2" label="Enter Birth Date: " value={contactBDay} onchange={handleChange}></lightning-input>
+    <lightning-button variant="brand-outline" label="Alert" title="Primary action with lighter look" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+</template>
+

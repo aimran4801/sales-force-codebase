@@ -1,0 +1,12 @@
+<template>
+    <lightning-quick-action-panel header="My action">
+    <lightning-record-edit-form
+            object-api-name={objectApiName}
+            record-id={recordId}
+            onsuccess={handleSuccess}>
+         <!-- <lightning-input-field field-name value={Accname}></lightning-input-field>
+        <lightning-input-field field-name value={casereason}></lightning-input-field> -->
+        <lightning-button variant="brand" label="New sales order" type="submit" onclick={handleClick} ></lightning-button>
+   </lightning-record-edit-form>
+</lightning-quick-action-panel>
+</template>

@@ -1,0 +1,6 @@
+<template>
+    <lightning-card title="Conditional Rendering" icon-name="standard:partners">
+        <lightning-input type="toggle" label="Show Form" name="input1" checked={checkCondition} onchange={handleChange}></lightning-input>
+        <template if:true={checkCondition}> Form Shown</template>
+    </lightning-card>
+</template>

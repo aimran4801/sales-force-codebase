@@ -1,0 +1,19 @@
+<template>
+   <lightning-card title="Calculator">
+    <div>
+        <lightning-input type="number" name="input1" label="Number 1" placeholder="Enter No." value={fNumber} onchange={handleChange1}></lightning-input>
+        <lightning-input type="number" name="input1" label="Number 2" placeholder="Enter No." value={sNumber} onchange={handleChange2}></lightning-input>
+    </div>
+    <br>
+    <div>
+        <b>Result is:</b>
+          {resValue} 
+    </div>
+    <div>
+        <lightning-button label="+" onclick={add}></lightning-button>
+        <lightning-button label="-" onclick={sub}></lightning-button>
+        <lightning-button label="*" onclick={multip}></lightning-button>
+        <lightning-button label="/" onclick={division}></lightning-button>
+    </div>
+   </lightning-card>
+</template>

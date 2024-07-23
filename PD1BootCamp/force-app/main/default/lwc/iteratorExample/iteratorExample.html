@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Iterator Example">
+        <template iterator:it={saasGuruStudents}>
+            <template if:true={it.first}>
+                ------------
+            </template>
+            <p key ={it.value.Email}> {it.value.Name} and title of the person is:{it.value.Title}</p>
+            --------------
+            <template if:true={it.last}>
+            -----------
+            </template>
+        </template>
+    </lightning-card>
+</template>
